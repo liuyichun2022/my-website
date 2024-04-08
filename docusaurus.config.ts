@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Artisan Bytes',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'ArtisanBytes 结合了“工匠精神”和“数据字节”，适用于注重细节和质量的技术项目或数据分析服务。',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -58,7 +58,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Artisan Bytes',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -67,10 +67,14 @@ const config: Config = {
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          position: 'right',
+          label: '项目',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          label: '博客', 
+          position: 'right',
+          to: '/blog'
+        },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -82,7 +86,7 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: '笔记',
           items: [
             {
               label: 'Tutorial',
@@ -91,37 +95,30 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
+          title: '社交媒体',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+            { label: '关于我', to: '/about' },
+            { label: 'GitHub', href: 'https://github.com/JasonExplorer' },
+            { label: '掘金', href: 'https://juejin.cn/user/3096659615287703'},
+            { label: 'Discord', href: 'https://discordapp.com/invite/docusaurus'},
+            { label: 'Twitter', href: 'https://twitter.com/docusaurus'},
           ],
         },
         {
-          title: 'More',
+          title: '更多',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+            { label: 'Blog', to: '/blog'},
+            { label: 'GitHub', href: 'https://github.com/facebook/docusaurus'},
+            { html: `
+                <a href="https://docusaurus.io/zh-CN/" target="_blank" rel="noreferrer noopener">
+                  <img src="/img/buildwith.png" alt="build with docusaurus" width="120" height="50"/>
+                <a/>
+                `,
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Artisan Bytes, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
