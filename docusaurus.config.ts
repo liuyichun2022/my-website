@@ -47,12 +47,17 @@ const config: Config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Artisan Bytes 工作室',
+      title: 'ArtisanBytes 工作室',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
       items: [
+        {
+          label: '博客', 
+          position: 'right',
+          to: '/blog'
+        },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
@@ -60,9 +65,10 @@ const config: Config = {
           label: '项目',
         },
         {
-          label: '博客', 
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
           position: 'right',
-          to: '/blog'
+          label: '技术笔记',
         },
         {
           label: '工具导航', 
