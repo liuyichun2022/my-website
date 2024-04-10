@@ -86,12 +86,11 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: '笔记',
+          title: '学习',
           items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
+            { label: '博客', to: '/docs/intro'},
+            { label: '项目', to: '/docs/intro'},
+            { label: '笔记', to: '/docs/intro'},
           ],
         },
         {
