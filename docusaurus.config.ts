@@ -3,30 +3,20 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Artisan Bytes',
-  tagline: 'ArtisanBytes 结合了“工匠精神”和“数据字节”，适用于注重细节和质量的技术项目或数据分析服务。',
+  title: 'Artisan Bytes 工作室',
+  tagline: 'ArtisanBytes 结合了“工匠精神”和“数据字节”，适用于注重细节和质量的技术项目或数据分析服务，欢迎交流、咨询合作。',
   favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://artisanbytes.cn',
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'my-website', // Usually your repo name.
+  organizationName: 'ArtisanBytes',
+  projectName: 'my-website', 
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
   },
 
   presets: [
@@ -37,11 +27,11 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
+          editUrl: 
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -55,10 +45,9 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Artisan Bytes',
+      title: 'Artisan Bytes 工作室',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -76,9 +65,14 @@ const config: Config = {
           to: '/blog'
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          label: '工具导航', 
           position: 'right',
+          to: '/blog'
+        },
+        {
+          label: '关于',
+          position: 'right',
+          to: '/blog'
         },
       ],
     },
@@ -91,6 +85,7 @@ const config: Config = {
             { label: '博客', to: '/docs/intro'},
             { label: '项目', to: '/docs/intro'},
             { label: '笔记', to: '/docs/intro'},
+            { label: '工具导航', to: '/docs/intro'},
           ],
         },
         {
